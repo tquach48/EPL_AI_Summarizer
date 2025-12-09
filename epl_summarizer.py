@@ -1,26 +1,56 @@
 import json
 import re
-import spacy
+import nltk
 from transformers import pipeline
 from sklearn.model_selection import train_test_split
 
 # --------------------------
+# NLTK SETUP
+# --------------------------
+nltk.download("punkt")
+nltk.download("averaged_perceptron_tagger")
+nltk.download("maxent_ne_chunker")
+nltk.download("words")
+
+# --------------------------
 # LOAD MODELS
 # --------------------------
-nlp = spacy.load("en_core_web_trf")
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
 # --------------------------
 # ENTITY EXTRACTION
 # --------------------------
 def extract_entities(text):
-    doc = nlp(text)
-    return [(ent.text, ent.label_) for ent in doc.ents]
+    """
+    Uses NLTK to extract named entities from text.
+    Returns a list of (entity, type) tuples.
+    """
+    if not text:
+        return []
+
+    sentences = nltk.sent_tokenize(text)
+    entities = []
+
+    for sent in sentences:
+        words = nltk.word_tokenize(sent)
+        pos_tags = nltk.pos_tag(words)
+        chunks = nltk.ne_chunk(pos_tags, binary=False)
+        for chunk in chunks:
+            if hasattr(chunk, "label"):
+                entity_name = " ".join(c[0] for c in chunk)
+                entities.append((entity_name, chunk.label()))
+    return entities
 
 # --------------------------
 # EVENT EXTRACTION
 # --------------------------
 def extract_events(text):
+    """
+    Extracts simple goal-related events from match text.
+    """
+    if not text:
+        return []
+
     events = []
     goal_pattern = r"(\d+'\s*)?([^\.]*goal[^\.]*)"
     for m in re.finditer(goal_pattern, text, flags=re.I):
@@ -31,21 +61,46 @@ def extract_events(text):
 # SUMMARIZATION
 # --------------------------
 def summarize_text(text):
-    if len(text) < 100:
-        return text  # avoid crashing for short text
-    summary = summarizer(
-        text,
-        max_length=200,
-        min_length=60,
-        do_sample=False
-    )[0]['summary_text']
-    return summary
+    """
+    Summarizes text paragraph-wise first, then
+    combines paragraph summaries into a final summary.
+    """
+    if not text or len(text.strip()) < 50:
+        return text or ""
+
+    paragraphs = [p for p in text.split("\n") if p.strip()]
+    paragraph_summaries = []
+
+    for p in paragraphs:
+        input_len = len(p.split())  # word count
+        max_len = min(60, input_len)
+        min_len = max(5, int(max_len * 0.5))  # minimum 5 words
+        min_len = min(min_len, max_len)       # ensure min <= max
+
+        try:
+            summary = summarizer(p, max_length=max_len, min_length=min_len, do_sample=False)[0]['summary_text']
+        except Exception:
+            summary = p
+        paragraph_summaries.append(summary)
+
+    combined_summary = " ".join(paragraph_summaries)
+
+    final_max_len = min(200, len(combined_summary.split()))
+    final_min_len = max(10, int(final_max_len * 0.5))
+    final_min_len = min(final_min_len, final_max_len)  # ensure min <= max
+
+    try:
+        final_summary = summarizer(combined_summary, max_length=final_max_len, min_length=final_min_len, do_sample=False)[0]['summary_text']
+    except Exception:
+        final_summary = combined_summary
+
+    return final_summary
 
 # --------------------------
 # PROCESS SINGLE ENTRY
 # --------------------------
 def process_entry(entry):
-    raw = entry.get("match_report", "")
+    raw = entry.get("report", "")
     return {
         "raw_text": raw,
         "entities": extract_entities(raw),
@@ -86,7 +141,6 @@ def main(json_file="premier_league_results.json"):
     print("\nSaved:")
     print(" - train_processed.json")
     print(" - test_processed.json")
-
 
 if __name__ == "__main__":
     main()
