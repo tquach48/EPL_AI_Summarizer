@@ -1,0 +1,11 @@
+{
+    "rouge": {
+        "rouge1": 0.284,
+        "rouge2": 0.1935,
+        "rougeL": 0.1895
+    },
+    "coverage": {
+        "events": 0.0
+    },
+    "hallucination_rate": 0.25
+}

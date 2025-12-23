@@ -1,0 +1,244 @@
+[
+    {
+        "match": "Aston Villa vs Crystal Palace",
+        "match_type": "Dominant win for Crystal Palace",
+        "key_players": [
+            "Mateta"
+        ],
+        "injuries": [],
+        "events": [
+            "\nBizot had kept a clean sheet on his Premier League debut in Villa’s goalless draw against Newcastle United, but he was picking the ball out of the net midway through the first half after timing his challenge on Kamada inside the box all wrong",
+            " Watkins twice tested Henderson in quick succession, though he saw both of his attempts at goal repelled by his England team-mate",
+            "\nVilla showed signs of improvement early in the second half as Youri Tielemans and Watkins came close, but their profligacy in the final third proved costly, with Emery’s team now the only side in the Premier League yet to score a goal this season",
+            "\nAnd two goals in 10 second-half minutes from Guehi and Sarr put the result beyond doubt, with the former perhaps providing a fitting farewell to his four-year stint with the Eagles after putting in a captain’s performance"
+        ],
+        "hybrid_summary": "Aston Villa beat Crystal Palace 0-3. Mateta was the standout performer. They led on xG (1.14 vs 2.65). Shots on target finished 4 to 4.",
+        "raw_summary": "Aston Villa are the only side in the Premier League yet to score a goal this season. Villa keeper Bizot kept a clean sheet on his Premier League debut in Villa’s goalless draw against Newcastle United. Guehi has been linked with a move to Premier League champions Liverpool. Mateta scores from the penalty spot to give Palace the lead. Palace could have doubled their advantage soon after, but Sarr could only head Daniel Munoz's cross over the bar. Sarr scores late goal to seal all three points for Palace."
+    },
+    {
+        "match": "Brentford vs Newcastle",
+        "match_type": "Dominant win for Brentford",
+        "key_players": [
+            "Schade"
+        ],
+        "injuries": [],
+        "events": [
+            "\nThey stepped things up further in the second half, though, and they got their rewards through their ninth goal from a long throw since the beginning of last season, along with a Thiago brace",
+            "\nThe game-changing moment then came with 17 minutes to go, as Newcastle went a goal and a man down following Burn's mistimed challenge on Ouattara",
+            "\nThe Magpies are now winless in nine Premier League away games, and Barnes' goal represented their only effort on target throughout the match, with Nick Woltemade enduring another quiet outing, aside from his involvement in the build-up to that goal"
+        ],
+        "hybrid_summary": "Brentford beat Newcastle 3-1. Schade was the standout performer. They led on xG (2.35 vs 0.44). Shots on target finished 7 to 1.",
+        "raw_summary": "Brentford have won 13 points from their first 10 games for the fourth consecutive season. Brentford have lost just once in their opening six home matches of the season. Newcastle lost 3-1 to West Ham United last week. Newcastle are now winless in nine Premier League away games. The Magpies took the lead through Barnes after a clever dummy. Igor Thiago scored from the penalty spot with 12 minutes to play. The Brazilian added another on the break five minutes into stoppage time to make sure of the result."
+    },
+    {
+        "match": "Newcastle vs Arsenal",
+        "match_type": "Narrow win for Arsenal",
+        "key_players": [],
+        "injuries": [
+            {
+                "sentence": "Usually so strong from corners at both ends, Arsenal were also found wanting when Gabriel went down under minimal contact in the build-up to Woltemade's goal.",
+                "players": [
+                    "Gabriel",
+                    "Gabriel",
+                    "Woltemade",
+                    "Arsenal"
+                ]
+            }
+        ],
+        "events": [
+            "\nUsually so strong from corners at both ends, Arsenal were also found wanting when Gabriel went down under minimal contact in the build-up to Woltemade's goal",
+            "\nArteta withdrew full-back Riccardo Calafiori and holding midfielder Martin Zubimendi for Merino and Odegaard, and each substitute registered a goal involvement in a dramatic finale",
+            "\nHowe will be particularly disappointed, then, to see Arsenal score from two deliveries into a crowded box, while the previously imperious Pope was caught in no man's land for the winning goal"
+        ],
+        "hybrid_summary": "Newcastle beat Arsenal 1-2 at St James' Park on Saturday. Newcastle's win was their first in the Premier League this season. Arsenal's defeat was their second in a row.",
+        "raw_summary": "Arsenal drew 1-1 with Manchester City in the Premier League last week. Gunners boss Arteta was accused of adopting an overly conservative approach. Arteta's changes made the difference as Merino flicked a Gabriel heads home deep in stoppage time to earn Arsenal a point. Eddie Howe reverted to a five-man defence in a bid to protect Newcastle's lead. Newcastle had kept four clean sheets in their first five matches of the campaign. The Magpies only conceded to champions Liverpool in a chaotic 3-2 loss."
+    },
+    {
+        "match": "Fulham vs Brentford",
+        "match_type": "Convincing win for Fulham",
+        "key_players": [
+            "Iwobi"
+        ],
+        "injuries": [],
+        "events": [
+            "He stayed alive in the box for the first goal, having initially been overlooked for a throughball, and took centre stage with a fine instinctive finish despite being slightly off-balance",
+            "\nFor the second home game in a row, Fulham then benefitted from an awkward own goal, and when Pinnock put through his own net, the job was effectively done for the hosts, who have now recorded three straight wins over Brentford",
+            " Damsgaard, back in the team after illness, demonstrated brilliant awareness to cut out King’s attempted reverse pass, before slotting home his first league goal since last December",
+            "\nDespite their best efforts, there was no way back after Pinnock’s own goal, with Igor Thiago and Dango Ouattara unable to make their presence known in the final third"
+        ],
+        "hybrid_summary": "Fulham beat Brentford 3-1. Iwobi was the standout performer. They led on xG (1.01 vs 0.6). Shots on target finished 3 to 3.",
+        "raw_summary": "Brentford were held to a 1-1 draw at home to Arsenal in the Premier League on Saturday. Brentford have lost all three of their Premier League away games this season. Damsgaard scored his first league goal since December. The Danish international was back in the team after illness. Igor Thiago and Dango Ouattara unable to instil a sense of control in Brentford's midfield. The two sides will play each other again in the EFL Cup on Tuesday."
+    },
+    {
+        "match": "Newcastle vs Fulham",
+        "match_type": "Narrow win for Newcastle",
+        "key_players": [
+            "Murphy"
+        ],
+        "injuries": [],
+        "events": [
+            "\nIndeed, the Magpies had only scored seven goals in eight Premier League matches, though Tuesday's 3-0 win over Jose Mourinho's Benfica in the UEFA Champions League gave them fresh impetus",
+            "\nThey should certainly have gone into half-time more than one goal to the good",
+            "\nFulham have benefitted from two own goals in the Premier League this season, and with none of their own players netting more than once, opposition players have been their best route to goal",
+            " Moments after he squandered an opportunity to find Alex Iwobi unmarked at the far post, Kevin produced an inch-perfect cross for Jimenez, causing the scramble that led to Lukic's goal"
+        ],
+        "hybrid_summary": "Newcastle beat Fulham 2-1. Murphy was the standout performer. They led on xG (2.14 vs 1.53). Shots on target finished 7 to 5.",
+        "raw_summary": "Fulham held to a 1-1 draw by Newcastle at St James' Park. Osula scored his second goal of the game after a Bassey giveaway. Newcastle have won back-to-back games in all competitions. Fulham have now lost four straight Premier League games for the first time since 2023. The Cottagers host Wolverhampton Wanderers next Saturday. Newcastle face Tottenham Hotspur in the EFL Cup and West Ham United in Fulham's next two matches."
+    },
+    {
+        "match": "Man Utd vs Everton",
+        "match_type": "Dominant win for Everton",
+        "key_players": [
+            "Dewsbury-Hall"
+        ],
+        "injuries": [
+            {
+                "sentence": "They were forced into early changes to their game plan as Seamus Coleman, making his first Premier League start of the season, was forced off injured 10 minutes in before Gueye’s red card prompted another reshuffle by a stunned Moyes.",
+                "players": [
+                    "Moyes",
+                    "Seamus Coleman",
+                    "Gueye"
+                ]
+            }
+        ],
+        "events": [
+            "\nIt took the goal to spark some life into the hosts; Amad drilled a shot straight at Pickford before Patrick Dorgu’s sliced effort flew wide, and the first-half performance prompted a switch at the break, with Mount brought on to provide a different option"
+        ],
+        "hybrid_summary": "Man Utd beat Everton 0-1. Dewsbury-Hall was the standout performer. They led on xG (1.71 vs 0.21)",
+        "raw_summary": "Zirkzee scored the only goal of the game in the second half. United have won their last four Premier League games. Everton had not won at Old Trafford since December 2013 under David Moyes. The Toffees are unbeaten in their last three matches. They take on Newcastle United at the  St James' Park on Saturday. CLICK HERE for all the latest Manchester United news. Click here for the Everton vs Newcastle United team news, odds and probable line-ups. READ: Wayne Rooney sent off as Manchester United beat Everton 1-0."
+    },
+    {
+        "match": "Newcastle vs Liverpool",
+        "match_type": "Narrow win for Liverpool",
+        "key_players": [
+            "Guimarães"
+        ],
+        "injuries": [],
+        "events": [
+            "\nNgumoha, who turns 17 on Friday, earned rave reviews from Liverpool supporters as he scored two goals in pre-season",
+            "\nHe is now the fourth-youngest goalscorer in the history of the Premier League, with only James Vaughan, James Milner and Wayne Rooney netting in it at a younger age",
+            " He's the second 16-year-old after Rooney to score a winning goal in the competition",
+            " we were in a great place with just the goal missing",
+            "”\nArne Slot: \"It was a great goal for a 16-year-old"
+        ],
+        "hybrid_summary": "Newcastle beat Liverpool 2-3. Guimarães was the standout performer. They led on xG (0.98 vs 0.69). Shots on target finished 3 to 4.",
+        "raw_summary": "Alan P Ngumoha scored the only goal of the game in the second half. Ekitike extended his scoring run to three matches in all competitions. Newcastle left with nothing to show for their Herculean second-half efforts. Sunderland travel to Leeds United in the Premier League on Saturday. They will be without the suspended Gordon for the trip to Elland Road. Arsenal visit Newcastle play their first game since Isak posted on social media about his relationship with the club. Liverpool signed Florian Wirtz from Bayer Leverkusen for £16million in the summer."
+    },
+    {
+        "match": "Liverpool vs Man Utd",
+        "match_type": "Narrow win for Man Utd",
+        "key_players": [
+            "Gakpo"
+        ],
+        "injuries": [],
+        "events": [
+            "\nGakpo toiled and tussled, three times frustrated by the frame of the goal before his luck finally turned, after Slot boldly switched to 4-2-4",
+            "\nGakpo’s goal did not take the wind out of Man Utd’s sails, either, and when the big moment came, Maguire was on hand to secure a win that might just prove Amorim’s team are on the right track"
+        ],
+        "hybrid_summary": "Gakpo was the standout performer. Liverpool led on xG (2.75 vs 1.34) Shots on target finished 6 to 4.",
+        "raw_summary": "Manchester City host Manchester United at the Etihad Stadium on Sunday. The Red Devils drew 2-2 with City last season, and claimed a huge win. Mbeumo scored the opener after a collision with two Liverpool players. Maguire was on hand to secure a win that might just prove Amorim’s team are on the right. Man Utd are into the top half and within touching distance of the top four. Even at this early stage, that will be a huge."
+    },
+    {
+        "match": "Fulham vs Arsenal",
+        "match_type": "Narrow win for Arsenal",
+        "key_players": [
+            "Trossard"
+        ],
+        "injuries": [],
+        "events": [
+            " They have now scored 37 goals from corners in the Premier League since the start of the 2023/24 season, at least 16 more than any other team"
+        ],
+        "hybrid_summary": "Fulham beat Arsenal 0-1. Trossard was the standout performer. They led on xG (0.44 vs 1.87)",
+        "raw_summary": "Arsenal could not get going from an attacking perspective before the break. Fulham had their chances, though, with Wilson firing two shots over in quick succession. The Gunners' strong defence was able to navigate the remainder of the contest. Arsenal have now scored 37 goals from corners in the Premier League since the start of the 2023/24 season. At least 16 more than any other team. Arsenal host Atletico Madrid in the Champions League on Tuesday."
+    },
+    {
+        "match": "Nott'm Forest vs Leeds",
+        "match_type": "Dominant win for Nott'm Forest",
+        "key_players": [
+            "Sangaré"
+        ],
+        "injuries": [],
+        "events": [
+            "Forest had failed to win any of their 16 previous Premier League games when conceding first, but they were back on level terms just two minutes and 17 seconds later, as Sangare chose an ideal time to score his first goal for the club",
+            "\nIt was also a welcome change in fortunes for Leeds, who had conceded the opening goal in all five of their Premier League away games this season"
+        ],
+        "hybrid_summary": "Nott'm Forest beat Leeds 3-1. Sangaré was the standout performer. They led on xG (2.55 vs 0.69). Shots on target finished 6 to 3.",
+        "raw_summary": "Daniel Farke's side had never lost a league game under Daniel Farke when scoring first. Leeds had conceded the opening goal in all five of their Premier League away games this season. The club's next four games after the international break are against Aston Villa, Manchester City, Chelsea and Liverpool. Leeds remain just a point above the relegation zone heading into the final game of the season against Manchester United on Saturday. CLICK HERE for all the latest Leeds United news. Click here for the Leeds United transfer news."
+    },
+    {
+        "match": "Newcastle vs Nott'm Forest",
+        "match_type": "Dominant win for Newcastle",
+        "key_players": [
+            "Guimarães"
+        ],
+        "injuries": [],
+        "events": [
+            "\nJoelinton ought to have done better with an early shot straight at Sels when rushing to meet Kieran Trippier's cross, and the Brazilian was denied by a fine save by Forest's goalkeeper with a back-post header shortly after",
+            "\nThey conceded 13 goals in six games, and a concerted effort to be more difficult to break down was evident here",
+            "\nWhile it did have the desired effect of quelling Newcastle's usually lively home crowd, it meant that Forest were unable to produce a great deal in attack – with an Expected Goals (xG) of just 0",
+            "\nA higher-octane Newcastle press in the second half then suffocated Forest, with Gibbs-White's insistence that he was felled by Guimaraes in the build-up to the opening goal only adding to the visitors' frustrations",
+            "\nHowever, the truth is it required some fine work from Sels to make sure the scoreline was not larger, with Malick Thiaw and Harvey Barnes joining Tonali in being denied by the busy Forest goalkeeper, prior to Woltemade sealing the points"
+        ],
+        "hybrid_summary": "Newcastle beat Nott'm Forest 2-0. Guimarães was the standout performer. They led on xG (3.45 vs 0.3). Shots on target finished 9 to 4.",
+        "raw_summary": "Newcastle held to goalless draw by Nottingham Forest at St James' Park. Guimaraes opened the scoring with a fine 25-yard effort. Woltemade scored from the penalty spot after Anderson fouled him. Newcastle beat Union Saint-Gilloise 4-0 in the UEFA Champions League. Newcastle have now won their last two Premier League games. Forest have failed to win any of their opening seven matches under Ange Postecoglou in all competitions. Newcastle travel to Brighton & Hove Albion on Saturday."
+    },
+    {
+        "match": "Bournemouth vs Fulham",
+        "match_type": "Convincing win for Bournemouth",
+        "key_players": [
+            "Semenyo  , 90'+6'"
+        ],
+        "injuries": [],
+        "events": [
+            "While Bournemouth have generally impressed in the early season, they only scored one goal in their first two home games – a 1-0 win over Wolverhampton Wanderers and a 0-0 draw with Newcastle United – and it looked as though they may fire another blank here",
+            " The former now has six Premier League goals this season, with only Manchester City's Erling Haaland (eight) ahead of him in the Golden Boot race",
+            "\nBut eight minutes after his goal, Jimenez was withdrawn and appeared to be in major discomfort as he clutched at his hip"
+        ],
+        "hybrid_summary": "Bournemouth beat Fulham 3-1. Semenyo , 90'+6' was the standout performer. Shots on target finished 6 to 4.",
+        "raw_summary": "Semenyo now has six Premier League goals this season. Only Manchester City's Erling Haaland (eight) is ahead of him in the Golden Boot race. Fulham struggled to make it stick up front throughout the first half. Adama Traore played the rest of the game as a makeshift striker. Sasa Lukic becomes the latest Fulham player to suffer an injury. Tom Cairney comes on in the 14th minute. Chukwueze Kluivert's wonder strike gave Bournemouth the lead."
+    },
+    {
+        "match": "Spurs vs Wolves",
+        "match_type": "Draw",
+        "key_players": [
+            ""
+        ],
+        "injuries": [],
+        "events": [
+            " The hosts were bullied in midfield, with Andre particularly impressive for Wolves, while wild pot-shots from Cristian Romero and Palhinha were sent flying over Johnstone’s goal",
+            "\nBueno was in the right place at the right time to score his first goal for Wolves, on his 56th appearance for the club, while he was also rock-solid defensively, making one heroic challenge to halt a marauding run from Xavi Simons"
+        ],
+        "hybrid_summary": " Spurs beat Wolves 1-1. Spurs led on xG (0.87 vs 1.15). Shots on target finished 3 to 3.",
+        "raw_summary": "Tottenham drew 1-1 at home to Wolves in the EFL Cup on Tuesday. Vitor Pereira made nine changes to his starting XI from midweek. The former Brentford boss played a back four in a Premier League game for the very first time. Tottenham travel to Bodo/Glimt in the UEFA Champions League. They then travel to Elland Road to face Leeds United in the Premier League. Wolves lost 3-1 to Leeds United at home last week. Adel Taarabt scored the only goal of the game in the second half."
+    },
+    {
+        "match": "Man Utd vs Arsenal",
+        "match_type": "Narrow win for Arsenal",
+        "key_players": [
+            "Calafiori"
+        ],
+        "injuries": [],
+        "events": [
+            "\nHowever, United were ultimately made to pay for conceding a soft goal the first time they were truly tested",
+            "\nNo Arsenal player managed double figures for goals in the Premier League last season and much of the excitement around the Gunners has been in relation to their big-money acquisition of Viktor Gyokeres from Sporting"
+        ],
+        "hybrid_summary": "Man Utd beat Arsenal 0-1. Calafiori was the standout performer. They led on xG (1.52 vs 1.31). Shots on target finished 7 to 3.",
+        "raw_summary": "Bayindir started in goal after Andre Onana recovered from a hamstring injury. Mbeumo registered the first shot on target and then tested Raya with that strong header. Cunha had supporters out of their seats with several powerful runs at the heart of the Arsenal defence. Raya's 38th-minute save from his Manchester United were made to pay for conceding a soft goal. Neither Martin Odegaard nor Bukayo Saka were able to impose themselves in the final third."
+    },
+    {
+        "match": "Arsenal vs Man City",
+        "match_type": "Draw",
+        "key_players": [
+            "Martinelli"
+        ],
+        "injuries": [],
+        "events": [
+            "\nCity looked set to leave north London with all three points as they held out for the majority of Sunday’s huge match after Erling Haaland combined with Tijjani Reijnders to score an excellent breakaway goal in the ninth minute",
+            "\nCity then went close to a second goal against the run of play, but Haaland's angled drive was blocked by David Raya while Eze's clearance ricocheted off Declan Rice and spun over the crossbar",
+            "\nLeandro Trossard had an effort blocked and saw an enticing centre fizz across goal without a touch, while Jeremy Doku was unable to flick home from a tight angle at the other end",
+            "\nBut City's superstar striker opted against an over-the-top reaction after netting here, instead crediting Reijnders for his role in the sweeping move which ended with Haaland's sixth Premier League goal of the season (below)"
+        ],
+        "hybrid_summary": "Arsenal beat Man City 1-1 in the Premier League on Sunday. They led on xG (0.89 vs 0.87) Shots on target finished 3 to 3.",
+        "raw_summary": "Erling Haaland opened the scoring for Manchester City in the ninth minute. Tijjani Reijnders doubled City's lead in the second half. Arsenal salvaged a 1-1 draw against Manchester City at Emirates Stadium. Bukayo Saka and Gabriel Martinelli came on after the break. Arsenal are back up to second place in the Premier League. But they are still five points adrift of defending champions Liverpool. Arsenal lost 1-0 to Liverpool at Anfield in August."
+    }
+]
