@@ -2,8 +2,6 @@
 
 This project implements a hybrid Natural Language Processing (NLP) pipeline for generating concise, *at-a-glance* summaries of English Premier League (EPL) soccer matches. The system processes unstructured match reports and produces short, human-readable summaries designed for rapid consumption by casual fans and readers.
 
-The project was developed as part of **CSCI 4152 – Natural Language Processing** at **Dalhousie University**.
-
 ---
 
 ## Project Overview
