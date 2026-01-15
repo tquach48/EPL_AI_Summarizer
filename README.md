@@ -1,93 +1,189 @@
-# p-20
+# EPL Match Text Summarization
 
+This project implements a hybrid Natural Language Processing (NLP) pipeline for generating concise, *at-a-glance* summaries of English Premier League (EPL) soccer matches. The system processes unstructured match reports and produces short, human-readable summaries designed for rapid consumption by casual fans and readers.
 
+The project was developed as part of **CSCI 4152 – Natural Language Processing** at **Dalhousie University**.
 
-## Getting started
+---
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Project Overview
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Modern sports media produces an overwhelming volume of textual content per matchday. While detailed match reports are valuable, they are often too long for readers who simply want to understand the outcome and key moments of a game quickly. This project addresses that gap by generating short summaries that capture the essential information of an EPL match without reconstructing the full narrative.
 
-## Add your files
+To achieve this, the system combines:
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+* Rule-based linguistic extraction for factual grounding
+* Lightweight Named Entity Recognition (NER)
+* Event-oriented heuristics
+* Transformer-based abstractive summarization
+
+This hybrid approach balances conciseness, readability, and factual accuracy while reducing the risk of hallucination.
+
+---
+
+## Key Features
+
+* Automated scraping of EPL match reports
+* Linguistic extraction of players, teams, and events
+* Hybrid summarization (template-based + abstractive refinement)
+* Extreme short-form summaries for *at-a-glance* consumption
+* Evaluation using ROUGE, coverage metrics, and hallucination detection
+* Qualitative human review from soccer fans
+
+---
+
+## Project Structure
 
 ```
-cd existing_repo
-git remote add origin https://git.cs.dal.ca/courses/2025-Fall/nlp-course/p-20.git
-git branch -M main
-git push -uf origin main
+epl_project/
+│
+├── analysis/
+│   ├── players.py          # Key player detection
+│   ├── stats.py            # Match statistics extraction
+│   └── events.py           # Rule-based event extraction
+│
+├── summarization/
+│   ├── abstractive.py      # Transformer-based summarization
+│   ├── hybrid.py           # Hybrid summarization pipeline
+│   └── templates.py        # Template-based summary construction
+│
+├── scraper/
+│   └── scrape_matches.py   # Selenium-based EPL scraper
+│
+├── evaluation/
+│   ├── rouge_eval.py       # ROUGE scoring
+│   ├── coverage_eval.py    # Information coverage metrics
+│   └── hallucination.py    # Entity-based hallucination detection
+│
+├── data/
+│   ├── raw/                # Raw scraped match reports
+│   └── processed/          # Processed JSON outputs
+│
+├── eval_runner.py          # End-to-end evaluation script
+├── requirements.txt
+└── README.md
 ```
 
-## Integrate with your tools
+---
 
-- [ ] [Set up project integrations](https://git.cs.dal.ca/courses/2025-Fall/nlp-course/p-20/-/settings/integrations)
+## Methodology Summary
 
-## Collaborate with your team
+1. **Data Collection**
+   Match reports are scraped from the official Premier League website using Selenium to handle dynamic content.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+2. **Linguistic Extraction**
 
-## Test and Deploy
+   * Sentence tokenization and preprocessing
+   * Named Entity Recognition for player names
+   * Rule-based pattern matching for events and injuries
 
-Use the built-in continuous integration in GitLab.
+3. **Summarization**
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+   * Hierarchical abstractive summarization using `facebook/bart-large-cnn`
+   * Template-based summaries constructed from verified metadata
+   * Optional abstractive refinement under strict length constraints
 
-***
+4. **Evaluation**
 
-# Editing this README
+   * ROUGE-1, ROUGE-2, ROUGE-L
+   * Event and entity coverage
+   * Hallucination rate based on unsupported entity mentions
+   * Qualitative human review
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+---
 
-## Suggestions for a good README
+## Example Output
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+**Generated Summary:**
 
-## Name
-Choose a self-explaining name for your project.
+> *West Ham struggled to deal with crosses early on and nearly fell further behind after the break. They responded through Bowen, but defensive lapses proved costly. Crystal Palace were boosted by the return of Adam Wharton and held on to secure the result.*
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+This summary is intended to be read in seconds and paired with a scoreboard or match interface.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+---
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+1. Clone the repository:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+```bash
+git clone https://github.com/your-username/epl-match-summarization.git
+cd epl-match-summarization
+```
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+2. Create and activate a virtual environment:
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+3. Install dependencies:
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+```bash
+pip install -r requirements.txt
+```
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+---
 
-## License
-For open source projects, say how it is licensed.
+## Running the Pipeline
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+To generate summaries:
+
+```bash
+python summarization/hybrid.py
+```
+
+To evaluate summaries:
+
+```bash
+python eval_runner.py
+```
+
+---
+
+## Evaluation Results (Summary)
+
+* **ROUGE-1:** 0.284
+* **ROUGE-2:** 0.1935
+* **ROUGE-L:** 0.1895
+* **Hallucination Rate:** 0.25
+
+Human reviewers reported that summaries were coherent and accurately reflected matches they had watched, supporting the practical usefulness of the system despite modest automatic scores.
+
+---
+
+## Limitations
+
+* Rule-based extraction may miss paraphrased or implicit events
+* Abstractive model is not fine-tuned on sports-specific data
+* ROUGE underestimates quality for extreme short-form summaries
+* Hallucination detection relies on heuristic entity matching
+
+---
+
+## Future Work
+
+* Event-guided neural summarization
+* Domain-specific fine-tuning on sports datasets
+* Improved event-level coverage metrics
+* Larger-scale human evaluation
+* Integration with visual match data (scoreboards, highlights)
+
+---
+
+## Author
+
+**Terry Quach**
+CSCI 4152 – Natural Language Processing
+Dalhousie University
+
+---
+
+If you want, I can also:
+
+* Shorten this for a **GitHub-friendly README**
+* Make a **more formal course-submission version**
+* Add **badges, diagrams, or usage screenshots**
+
+Just tell me 👍
